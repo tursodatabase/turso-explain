@@ -29,6 +29,10 @@ jobs:
           mkdir _site
           cp index.html examples.js _site/
       - uses: actions/configure-pages@v5
+        with:
+          # Creates the Pages site on first run so no manual settings step
+          # is needed.
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
