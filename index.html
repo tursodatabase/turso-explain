@@ -151,6 +151,9 @@
   .edge { fill: none; stroke: #3b4d6e; stroke-width: 1.6; }
   .edge.ref { stroke-dasharray: 5 4; stroke: #52658c; }
   .edge-label { font-size: 9.5px; fill: var(--text-faint); }
+  /* Container boxes paint after (so over) the nodes they hold; without this
+     they swallow every click on the nodes inside. */
+  .panel-box, .panel-title { pointer-events: none; }
   .panel-box { fill: rgba(56, 189, 248, .045); stroke: rgba(56, 189, 248, .35); stroke-dasharray: 6 4; rx: 12px; }
   .panel-box.mat { fill: rgba(192, 132, 252, .05); stroke: rgba(192, 132, 252, .4); }
   .panel-box.arm { fill: rgba(251, 113, 133, .04); stroke: rgba(251, 113, 133, .3); }
