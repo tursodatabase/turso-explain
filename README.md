@@ -6,7 +6,7 @@ Visual Explain and [pgexplain.dev](https://www.pgexplain.dev/). Paste a plan,
 see the query: full-table scans, join shapes, subquery coroutines, shared CTE
 materializations, and repeated-per-row work all jump out.
 
-**Use it here: <https://lemikaelf.github.io/turso-explain-temp/>**
+**Use it here: <https://tursodatabase.github.io/turso-explain/>**
 
 ![kitchen-sink query plan](docs/screenshot.png)
 
@@ -44,7 +44,7 @@ The page is self-contained, so an iframe is all it takes:
 
 ```html
 <iframe
-  src="https://lemikaelf.github.io/turso-explain-temp/?embed=1"
+  src="https://tursodatabase.github.io/turso-explain/?embed=1"
   style="width: 100%; height: 640px; border: 0"
 ></iframe>
 ```
